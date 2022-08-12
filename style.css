@@ -207,7 +207,7 @@ body {
     font-weight: 500;
     font-size: 1.5em;
 }
-@media screen and (min-width: 360px) {   
+@media screen and (max-width: 375px) {   
 #about {
     height: 160vh;
 }
