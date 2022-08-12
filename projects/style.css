@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+}
+
+body{
+    color: #fff;
+}
+
+#slider{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #07374a; 
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 120%;
+}
+
+.container{
+    width: 1600px;
+    margin: auto;
+}
+.subcontainer{
+    width: 85%;
+    margin: auto;
+}
+.controller{
+    display: flex;
+    justify-content: space-between;
+}
+#controls .next{
+    position: relative;
+    bottom: -170px;
+    left: 100px;
+    z-index: 1;
+}
+#controls .previous{
+    position: relative;
+    bottom: -170px;
+    left: -1305px;
+    z-index: 1;
+}
+#controls i{
+    color: #fff;
+    font-size: 4rem;
+}
+.previous, .next{
+    padding: 2px;
+    width: 75px;
+    cursor:pointer;
+    border-radius: 50%;
+    outline: none;
+    transition: 0.2s ease-in-out;
+    border: 3px solid#fff;
+    background-color: #000;
+    box-shadow: 0 0 5px #bbb;
+}
+.previous:hover, .next:hover{
+    border: 2px solid grey;
+}
+
+.slide-img{
+    border-radius: 4px;
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-size:cover;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.slide-img:hover{
+    box-shadow: 0 0 0 200px rgba(0, 0,0,0.9)inset;
+}
+.slide-img a{
+    text-decoration: none;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 1.5rem;
+    color: #fff;
+    opacity: 0;
+}
+.slide-img:hover a{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.img-1{
+    background-image: url(../image/img-1.jpg);
+    
+}
+.img-2{
+    background-image: url(../image/img-2.jpg);
+
+}
+.img-3{
+    background-image: url(../image/img-3.jpg);
+
+}
+.img-4{
+    background-image: url(../image/img-4.jpg);
+
+}
+.img-5{
+    background-image: url(../image/img-5.jpg);
+
+}
+.img-6{
+    background-image: url(../image/img-6.jpg);
+
+}
+.img-7{
+    background-image: url(../image/img-7.jpg);
+
+}
+.img-8{
+    background-image: url(../image/img-8.jpg);
+
+}
+.img-9{
+    background-image: url(../image/img-9.jpg);
+
+}
+.img-10{
+    background-image: url(../image/img-10.jpg);
+
+}
+.img-11{
+    background-image: url(../image/img-11.jpg);
+
+}
+.img-12{
+    background-image: url(../image/img-12.jpg);
+
+}
+.img-13{
+    background-image: url(../image/img-13.jpg);
+
+}
+.img-14{
+    background-image: url(../image/img-14.jpg);
+
+}
+.img-15{
+    background-image: url(../image/img-15.jpg);
+
+}
+
+@media(max-width:1600px){
+    .container{
+        width: 100%;
+    }
+}
