@@ -129,6 +129,7 @@ body {
 .social-links {
     flex-wrap: wrap;
     display: flex;
+    justify-content: center;
   }
   
   .social-links a {
@@ -176,13 +177,19 @@ body {
   .social-links a:hover {
     transform: translateY(-10px);
   }  
+  @media screen and (max-width: 660px) {   
+    .social-links a {
+    margin: 10px 30px;
+    }
+
+}
 
 /* About section */
 
 
 #about {
     text-align: center;
-    height: 100vh;
+    height: auto;
     background-color: #07374a; 
     background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
     background-position: center;
@@ -191,7 +198,7 @@ body {
 
 }
 #about h2 {
-    font-size: 4rem;
+    font-size: 5rem;
     text-align: center;
     color: #25b79f;
 }
@@ -207,15 +214,11 @@ body {
     font-weight: 500;
     font-size: 1.5em;
 }
-@media screen and (max-width: 375px) {   
-#about {
-    height: 160vh;
-}
-    .about-tools {
-       padding-top: 1.625em;
-    }
 
- }
+.about-tools{
+    padding-bottom: 20px;
+}
+
     
       .about-tools ul:first-child {
         padding-left: 0px; }
